@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border:0px;
+}
+body{
+   overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+:root{
+    --main-color:brown;
+    --my-font:'Edu VIC WA NT Beginner', cursive;
+}
+.container{
+   
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.btn{
+    width:150px;
+    height:70px;
+    background-color: brown;
+    text-transform: capitalize;
+    color:white;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 20px;
+    font-family: var(--my-font);
+    transition: 0.3s linear;
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+.btn:hover{
+    background-color: rgb(219, 74, 74);
+}
+/* end commun things*/
+.main-page{
+    display: flex;
+}
+
+ .menu{
+    position: fixed;
+    width:450px;
+    height:100vh;
+    background-color: brown;
+    padding-top: 100px;
+    text-align: center;
+    
+  
+}
+ .menu svg{
+    font-size: 50px;
+    color:white;
+}
+ .menu h1{
+    color:white;
+    letter-spacing: 5px;
+}
+ .menu ul{
+    list-style: none;
+}
+ .menu ul li{
+    padding:10px;
+    margin-bottom: 10px;
+}  
+
+.menu ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+    font-family:var(--my-font);
+    font-weight: bolder;
+}
+.menu ul li a.active{
+  color:rgb(9, 8, 9);
+  
+  transition: .2s ease-in;
+  font-weight:1000;
+}
+ .menu ul li a:hover{
+    color:blanchedalmond;
+}
+.landing{
+    background-color:white;
+    width:100%;
+    margin-left:450px;
+    
+}
+.landing-image{
+    background-image: url("../image/image1.jpg");
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/*introduction*/
+.introduction{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.introduction h2{
+color:var(--main-color);
+font-family: var(--my-font);
+margin: 10px;
+padding: 10px;
+font-size: 25px;
+letter-spacing: 7px;
+font-weight: bolder;
+}
+.introduction p{
+width:75%;
+font-size: 18px;
+line-height: 2;
+margin: 20px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+/* end introduction*/
+/* start about*/
+.about{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+.about .container{
+    display: flex;
+ justify-items: center;
+ position: relative;
+ z-index: 200;
+ justify-content: space-between;
+}
+
+.about .container .photo-about {
+    width:20%;
+    height: 500px;
+   margin: 20px;
+    
+}
+.about .container .photo-about img{
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+.about .container .text-about{
+    width:70%;
+    
+    height:100px;
+}
+.about .container .text-about h2{
+    color:var(--main-color);
+font-family: var(--my-font);
+margin: 10px;
+padding: 10px;
+font-size: 25px;
+letter-spacing: 7px;
+font-weight: bolder;
+}
+.about .container .text-about p,.contact-text p{
+    width:75%;
+font-size: 18px;
+line-height: 2;
+margin: 20px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+/* end  about*/
+   .gallary-one{
+    padding-top: 150px;
+    padding-bottom: 200px;
+   } 
+
+   .gallary-one .container h2,.gallary-second .container h2,.gallary-third .container h2,.contact .container h2{
+    color:var(--main-color);
+    font-family: var(--my-font);
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    letter-spacing: 7px;
+    font-weight: bolder;
+   } 
+   .gallary-one-photo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+   }
+   .gallary-one-photo img{
+    width:170px;
+    height:250px;
+   }
+   .gallary-second{
+    padding-top: 150px;
+    padding-bottom: 200px;
+   }
+   .gallary-second-photo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+   }
+   .gallary-second-photo img{
+    width:300px;
+    height:250px;
+   }
+   .gallary-third{
+    padding-top: 150px;
+    padding-bottom: 200px;
+   }
+   .gallary-third-photo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+   }
+   .gallary-third-photo img{
+    width:250px;
+    height:250px;
+   }
+   .contact{
+    padding-top: 50px;
+    
+   }
+  .contact-area{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .contact-area .form{
+    width:60%;
+    margin-left:20px;
+    margin-top: 30px;
+  }
+  .contact-area .form input{
+    height:50px;
+  }
+  .contact-area .form input[type="submit"]{
+    width:120px;
+    margin-left: 5px;
+  }
+  .contact-area .form input, .contact-area .form textarea{
+    border:1px solid grey;
+    width:100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .contact-area .form input::placeholder,.contact-area .form textarea::placeholder{
+    text-transform: capitalize;
+
+  }
+  .contact-area .form input:focus,.contact-area .form textarea:focus{
+    outline: none;
+    box-shadow: 1px 1px 5px brown,-1px -1px 5px brown;
+    
+  }
+  .contact-area .contact-text{
+    width:35%;
+  }
+  .footer{
+    margin-top:100px;
+
+  }
+  .footer .container p{
+    font-size: 18px;
+line-height: 2;
+margin-bottom: 0px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+margin-top: 100px;
+  }
